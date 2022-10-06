@@ -19,9 +19,4 @@ So what you are gonna do is:
 $ conda uninstall rtree
 $ conda install -c conda-forge rtree=0.9.3
 ```
-Note that conda may still report errors after you've reinstalled an older version of rtree, because conda falsely looks outside its local environment and find another advanced version. I googled around for a while to find a way to change the PATH of conda, but ended in simply deleting the rtree I installed before in the "global" path. However, later I found the below command:
-```
-conda config --env --add channels conda-forge
-conda config --env --set channel_priority strict
-```
-that might do the trick of forcing conda to look for the packages only inside of its local environment, but I didn't got the chance to test it.
+Note that conda may still report errors after you've reinstalled an older version of rtree, because conda falsely looks outside its local environment and find another advanced version. I googled around for a while to find a way to change the PATH of conda, but ended in simply deleting the rtree I installed before in the "global" path. 
