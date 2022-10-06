@@ -10,8 +10,10 @@ I'm writing this article because it took me the whole afternoon to install Geopa
 1. Download Miniconda, open the Powershell Prompt of Miniconda, create and activate a new environment.
 2. `$conda install -y geopandas`
 
-Then if you import geopandas at this point, it will report:
-`OSError: could not find or load spatialindex_c-64.dll`
+Then if you import geopandas at this point, it will likely to report:
+```
+OSError: could not find or load spatialindex_c-64.dll
+```
 So what you are gonna do is: 
 ```
 $ conda uninstall rtree
